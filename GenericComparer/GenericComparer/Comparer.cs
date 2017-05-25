@@ -8,21 +8,38 @@ namespace GenericComparer
     {
         private string[] _propertiesToCompare;
 
+        /// <summary>
+        /// Default constructor. All properties will be compared.
+        /// </summary>
         public Comparer()
         {
             _propertiesToCompare = typeof(T).GetProperties().Select(x => x.Name).ToArray();
         }
 
+        /// <summary>
+        /// This constructor should be used if type evaluated in runtime.
+        /// All properties will be compared.
+        /// For this constructor you should use some parent type as generic type param.
+        /// (Using <see cref="object"/> as generic type param is acceptable).
+        /// </summary>
+        /// <param name="type"></param>
         public Comparer(Type type)
         {
             _propertiesToCompare = type.GetProperties().Select(x => x.Name).ToArray();
         }
 
+        /// <summary>
+        /// This constructor may user to choose by which properties should objects be compare
+        /// </summary>
+        /// <param name="propertiesToCompare">Properties to compare by</param>
         public Comparer(params string[] propertiesToCompare)
         {
             _propertiesToCompare = propertiesToCompare;
         }
 
+        /// <summary>
+        /// Checks equality of two objects
+        /// </summary>
         public bool Equals(T x, T y)
         {
             var type = x.GetType();
