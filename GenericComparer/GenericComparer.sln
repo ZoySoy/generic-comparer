@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericComparer", "GenericComparer\GenericComparer.csproj", "{C575810E-C068-4DB7-B1E9-9AA3697A7060}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionAndCaching", "ReflectionAndCaching\ReflectionAndCaching.csproj", "{C746471F-183A-452E-BD74-37E2D19D3E5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +17,15 @@ Global
 		{C575810E-C068-4DB7-B1E9-9AA3697A7060}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C575810E-C068-4DB7-B1E9-9AA3697A7060}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C575810E-C068-4DB7-B1E9-9AA3697A7060}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C746471F-183A-452E-BD74-37E2D19D3E5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C746471F-183A-452E-BD74-37E2D19D3E5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C746471F-183A-452E-BD74-37E2D19D3E5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C746471F-183A-452E-BD74-37E2D19D3E5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D86F0851-E943-4B5B-935F-A7F3C217239A}
 	EndGlobalSection
 EndGlobal
